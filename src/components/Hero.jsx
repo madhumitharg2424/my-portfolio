@@ -94,7 +94,7 @@ function Hero() {
           <motion.a
             whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px #3b82f6" }}
             whileTap={{ scale: 0.95 }}
-            href="/Madhumitha_resume(2) (1).pdf"
+            href="/MadhumithaRG_resume.pdf"
             download
             className="flex items-center gap-3 px-8 py-3 bg-[#1d253b] border border-blue-400/50 
                        text-blue-400 font-semibold rounded-xl shadow-md hover:bg-blue-500/20 
