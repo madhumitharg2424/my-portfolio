@@ -1,155 +1,207 @@
-// src/components/Projects.jsx
 import { motion } from "framer-motion";
-import { Eye } from "lucide-react";
 
 export default function Projects() {
   const projects = [
     {
-      title: "Criminal Identification System",
-      image: "criminal.jpg",
+      title: "EHub – Event Management System",
+      image:
+        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1200&q=80",
       description:
-        "Detects age and gender of criminals from images using computer vision. Includes webcam support and a searchable criminal database.",
-      tech: ["Python", "OpenCV", "Streamlit"],
-      link: "https://your-criminal-system-link.com",
+        "A full-stack event management system for creating, managing, and registering for events. Includes user management, event operations, and database integration.",
+      tech: ["React.js", "Spring Boot", "MySQL", "JWT"],
     },
+
     {
-      title: "Engineering Placement Quiz Website",
-      image: "quiz.jpg",
+      title: "InterviewAI – AI Mock Interview Platform",
+      image:
+        "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
       description:
-        "Real-time quiz platform with login/signup, streak system, and difficulty levels. Designed for placement preparation.",
-      tech: ["React.js", "Node.js"],
-      link: "https://realmind-quiz-web.netlify.app/login",
+        "An AI-powered mock interview platform designed to help students practice interviews through different categories, questions, sessions, and secure authentication.",
+      tech: ["React.js", "Spring Boot", "MySQL", "JWT", "Groq API"],
     },
+
+    {
+      title: "RealMindQuiz – Engineering Placement Quiz",
+      image:
+        "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&q=80",
+      description:
+        "An interactive engineering placement quiz platform with login/signup, multiple difficulty levels, question management, and a streak-based learning experience.",
+      tech: ["React.js", "Firebase", "Firestore"],
+    },
+
     {
       title: "E-Commerce Website",
-      image: "ecommerce.jpg",
+      image:
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80",
       description:
-        "Shopping platform with authentication, cart, and order placement. Built using Firebase for backend and hosting.",
-      tech: ["React.js", "Firebase"],
-      link: "https://your-ecommerce-website.com",
+        "An online shopping platform with authentication, product browsing, cart management, and order placement. Firebase is used for authentication and database functionality.",
+      tech: ["React.js", "Firebase", "Firestore"],
     },
+
+    {
+      title: "Plant Disease Detection",
+      image:
+        "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=80",
+      description:
+        "An AI-based plant disease detection application that analyzes plant images and helps identify possible diseases to support early detection and crop health monitoring.",
+      tech: ["Python", "Machine Learning", "OpenCV", "Streamlit"],
+    },
+
+    {
+      title: "Criminal Identification System",
+      image:
+        "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80",
+      description:
+        "A computer vision based hackathon project that analyzes images to detect age and gender attributes. Includes image upload, webcam integration, and a criminal database interface.",
+      tech: ["Python", "OpenCV", "Streamlit"],
+    },
+
     {
       title: "RescueVision AI",
-      image: "rescue.jpg",
+      image:
+        "https://images.unsplash.com/photo-1581091870622-3c8f1c9a1b2b?auto=format&fit=crop&w=1200&q=80",
       description:
-        "AI-based video detection app for disaster rescue. Detects lying posture from drone footage and triggers alerts.",
-      tech: ["OpenCV", "Streamlit", "Machine Learning"],
-      link: "https://your-rescuevision-link.com",
+        "An AI-based disaster rescue application that analyzes drone or thermal video footage and detects human posture such as a person lying down to support emergency response.",
+      tech: ["Python", "OpenCV", "Machine Learning", "Streamlit"],
     },
+
     {
-      title: "Climate Prediction System",
-      image: "climate.jpg",
+      title: "Blockchain Aid Project",
+      image:
+        "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1200&q=80",
       description:
-        "Predicts climate for 5 days and generates a regression model using dataset.",
-      tech: ["Python", "Machine Learning", "Streamlit"],
-      link: "https://your-climate-link.com",
+        "A blockchain-based aid management concept designed to improve transparency in donation and aid distribution by recording transactions securely and providing traceability.",
+      tech: ["Blockchain", "JavaScript", "Web3", "Smart Contracts"],
     },
+
     {
-      title: "Portfolio Website",
-      image: "portfolio.jpg",
+      title: "AI Resume Analyser",
+      image:
+        "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=1200&q=80",
       description:
-        "Personal portfolio showcasing projects, resume, and animations with dark theme UI.",
-      tech: ["React.js", "TailwindCSS", "Framer Motion"],
-      link: "https://your-portfolio-link.com",
+        "An AI-powered resume analysis application designed to analyze resumes and provide useful insights for improving job applications and recruitment workflows.",
+      tech: ["TypeScript", "AI", "NLP"],
+    },
+
+    {
+      title: "Ethical Hire AI",
+      image:
+        "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80",
+      description:
+        "An AI-focused hiring project exploring ethical and intelligent approaches to recruitment and candidate evaluation.",
+      tech: ["TypeScript", "AI", "Machine Learning"],
+    },
+
+    {
+      title: "PlayStation Analysis",
+      image:
+        "https://images.unsplash.com/photo-1605901309584-818e25960a8f?auto=format&fit=crop&w=1200&q=80",
+      description:
+        "A data-oriented project for exploring and analyzing PlayStation-related information and trends.",
+      tech: ["TypeScript", "Data Analysis"],
+    },
+
+    {
+      title: "Climate & Weather Application",
+      image:
+        "https://images.unsplash.com/photo-1561485132-59468cd0b553?auto=format&fit=crop&w=1200&q=80",
+      description:
+        "A Python-based climate and weather project focused on working with environmental and weather-related information.",
+      tech: ["Python", "Data Analysis"],
+    },
+
+    {
+      title: "Quiz Web Application",
+      image:
+        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+      description:
+        "An interactive quiz web application designed to provide users with an engaging way to answer questions and test their knowledge.",
+      tech: ["JavaScript", "HTML", "CSS"],
     },
   ];
-
-  const containerVariants = {
-    hidden: {},
-    visible: {
-      transition: { staggerChildren: 0.2 },
-    },
-  };
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 },
-  };
 
   return (
     <section
       id="projects"
       className="relative py-20 px-6 md:px-16 bg-gradient-to-br from-[#0a0f2c] via-[#111936] to-[#0f172a] text-white overflow-hidden"
     >
-      {/* Accent Effects */}
-      <div className="absolute top-10 left-10 w-20 h-20 bg-green-500 rounded-full blur-2xl opacity-30 animate-pulse"></div>
-      <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-500 rounded-full blur-3xl opacity-20"></div>
-
       <div className="container mx-auto">
+
         {/* Section Title */}
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-12 text-center bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent drop-shadow-lg">
+        <motion.h2
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="text-4xl md:text-5xl font-extrabold mb-12 text-center bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent drop-shadow-lg"
+        >
           My Projects
-        </h2>
+        </motion.h2>
 
         {/* Project Grid */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
-        >
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.map((project, i) => (
             <motion.div
               key={i}
-              variants={cardVariants}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               whileHover={{
-                scale: 1.03,
-                boxShadow: "0 0 25px rgba(34, 197, 94, 0.3)",
+                scale: 1.05,
+                y: -10,
               }}
-              transition={{ duration: 0.5 }}
-              className="bg-[#1d253b] rounded-2xl shadow-lg border border-green-400/20 overflow-hidden flex flex-col relative"
+              transition={{
+                duration: 0.6,
+                delay: i * 0.1,
+              }}
+              className="bg-[#1d253b]/90 rounded-2xl shadow-lg border border-green-400/30 overflow-hidden flex flex-col"
             >
-              {/* Thumbnail */}
-              <div className="relative">
-                <img
+
+              {/* Project Image */}
+              <div className="relative overflow-hidden">
+                <motion.img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-48 object-cover"
+                  whileHover={{ scale: 1.08 }}
+                  transition={{ duration: 0.5 }}
                 />
+
+                <span className="absolute top-3 right-3 bg-gradient-to-r from-green-400 to-blue-400 text-xs font-semibold px-3 py-1 rounded-full shadow-md text-black">
+                  Featured
+                </span>
               </div>
 
-              {/* Content */}
+              {/* Project Content */}
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold mb-3 text-green-400 hover:text-blue-400 transition">
+
+                {/* Title */}
+                <h3 className="text-xl font-bold mb-3 text-green-400">
                   {project.title}
                 </h3>
-                <p className="text-gray-300 text-sm flex-grow">
+
+                {/* Description */}
+                <p className="text-gray-300 text-sm leading-relaxed flex-grow">
                   {project.description}
                 </p>
 
-                {/* Tech stack tags */}
-                <div className="flex flex-wrap gap-2 mt-4 mb-6">
+                {/* Technology Tags */}
+                <div className="flex flex-wrap gap-2 mt-5">
                   {project.tech.map((tech, index) => (
-                    <span
+                    <motion.span
                       key={index}
+                      whileHover={{ scale: 1.08 }}
                       className="bg-[#111936] border border-green-400/30 text-green-300 text-xs px-3 py-1 rounded-full shadow-md"
                     >
                       {tech}
-                    </span>
+                    </motion.span>
                   ))}
                 </div>
 
-                {/* View Demo Button (Always Visible + Animated Fade In/Out) */}
-                <motion.a
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 1.2, repeat: Infinity, repeatType: "reverse" }}
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 px-6 py-2 bg-[#1d253b] border border-green-400/50 
-                             text-green-400 font-semibold rounded-xl shadow-md hover:bg-green-500/20 
-                             transition-all text-sm md:text-base"
-                >
-                  <Eye size={18} />
-                  View Demo
-                </motion.a>
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
